@@ -3,12 +3,40 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" <!--content="width=device-width-->, content=" text/html " <!--initial-scale=1.0"-->
     <title>Git Course</title>
     <style>
         * {
             margin: 0;
             padding: 0;
+        }
+        
+        #range {
+            accent-color: red;
+        }
+        
+        #radio {
+            accent-color: blue;
+        }
+        
+        #week {
+            accent-color: green;
+        }
+        
+        #term {
+            accent-color: green;
+        }
+        
+        #checkbox {
+            accent-color: green;
+        }
+        
+        #datatime {
+            accent-color: pink;
+        }
+        
+        .anchor {
+            anchor-name: --my-anchor;
         }
     </style>
 
@@ -18,7 +46,8 @@
     <h1>Hello Git Hub! I`m coming!</h1>
     <div class="navigation_panel" id="top_navigation">
         <nav>
-            <a href="">Статистика</a>
+            <a href="" id="my-anchor" class="anchor">Статистика</a>
+            <div anchor="my-anchor" class="hidden_wisdom">Здесь должна быть охуенная всплывашка, но она почему-то не работает</div>
             <a href="">Управление услугами</a>
             <a href="">Настройки</a>
         </nav>
@@ -27,13 +56,118 @@
         <div>
             <h2>Панель заказа услуг</h2>
             <form>
-                <label for="city">Город</label> <input type="text" id="city">
-                <label for="number">Номер телефона</label><input type="text" id="number">
-                <label for="term">Сроки тестирования</label><input type="date" id="term">
+                <label for="city">Город</label>
+                <input type="text" placeholder="Укажите ваш город" id="city">
+
+                <label for="number">Номер телефона</label>
+                <input placeholder="Ваш номер телефона" type="text" id="number">
+
+                <label for="term">Сроки тестирования</label>
+                <input type="date" id="term"><br>
+
+                <label for='file'>Выбор файла</label>
+                <input id="file" type="file" name="Просто кнопка"><br>
+
+                <label for="button">Обычная, но почему-то невидимая кнопка</label>
+                <input id="button" type="button"><br>
+
+                <label for="checkbox">Обычный чекбокс</label>
+                <input id="checkbox" type="checkbox"><br>
+
+                <label for="color">Новый элемент - "Выбор цвета"</label>
+                <input id="color" type="color"><br>
+
+                <label for="date">Тоже новый элемент - "Дата"</label>
+                <input id="date" type="date"><br>
+
+                <label for="datatime">Тоже новый непонятный элемент @datatime"</label>
+                <input id="datatime" placeholder="Новый элемент datatime" type="datetime"><br>
+
+                <label for="datatime-local">Новый элемент "datatime-local" </label>
+                <input id="datatime-local" type="datetime-local"><br>
+
+                <label for="email">Новый элемент E-mail. Нуждается в проверке корректности</label>
+                <input id="email" type="email" placeholder="Введите ваш email"><br>
+
+                <input id="hidden" type="hidden">
+                <label for="hidden">Новый скрытый элемент "hidden"</label> <br>
+
+                <input id="image" type="image">
+                <label for="image">Новый элемент "image"</label> <br>
+
+                <input id="month" type="month">
+                <label for="month">Новый элемент Месяц "Month"</label><br>
+
+                <input id="number" placeholder="Выберете, пожалуйста нужное количество" aria-placeholder="red" type="number">
+                <label for="number">Элемент "number". Представляет из себя просто цифровой счетчик</label> <br>
+
+                <input id="password" type="password" placeholder="Введите, пожалуйста пароль">
+                <label for="password">Это поле для ввода паролей</label> <br>
+
+                <input id="radio" type="radio">
+                <label for="radio">Обычная radio button</label> <br>
+
+                <input id="range" type="range">
+                <label for="range">Новый элемент "range". Представляет из себя ползунок. Скорее всего дожны задаваться граничные значения, для передачи их на сервер по положению бегунка</label> <br>
+
+                <input type="reset">
+                <label for="reset">Обычная кнопка Reset, или "Сбросить"</label> <br>
+
+                <input id="search" placeholder="Поисковая строка" type="search">
+                <label for="search">Поисковое поле которое называется "search"</label> <br>
+
+                <input id="tel" placeholder="Введите номер вашего телефона" type="tel">
+                <label for="tel">Похоже на поле для ввода номера телефона</label> <br>
+
+                <input type="time">
+                <label for="time">Поле time. Похоже предназначено для ввода времени</label> <br>
+
+                <input id="url" placeholder="URL - поле для ввода адреса" type="url">
+                <label for="url">Очень похоже на специальное поле для ввода URL-адресов</label> <br>
+
+                <input id="week" type="week">
+                <label for="week">Какое-то новое странное поле week. Похоже на специальное поле для введеине именно недели и года.</label> <br>
+
+                <div id="my-popover" popover=manual>
+                    <button class="close-btn" popovertarget="my-popover" popovertargetaction="hide">
+                        <span aria-hidden="true">X</span>
+                        <span class="sr-only">Закрыть</span>
+                    </button>
+                    <p>Здесь будет контент поповера</p>
+                </div>
+                <button popovertarget="my-popover" class="trigger-btn">
+                    Открыть поповер
+                </button><br>
+                <dialog open>
+                    Какая-то новая куйня под названием dialog. Работа схожа с попoвером, который не удалось запустить.
+                </dialog><br>
+                <dialog>
+                    Вроде как скрытый диалог
+                </dialog><br>
+
+
                 <input type="submit" id="submit">
+                <label for="submit">Финальная кнопка "Отправить"</label>
+
             </form>
         </div>
-
+        <div class="selectmenu">
+            <select>
+                <button slot="button" behavior="button">
+                    <span>Выберите тип события</span>
+                    <span behavior="selected-value" slot="selected-value"></span>
+                    <span><img src="icon.svg"></span>
+                </button>
+                <option value="meeting">
+                    <figure class="royalblue"></figure>
+                    <p>Совещание</p>
+                </option>
+                <option value="break">
+                    <figure class="gold"></figure>
+                    <p>Обед\перерыв</p>
+                </option>
+            </select>
+        </div>
         <!--<script src="script.js"></script> -->
 
         <!--<h2>Тут я добавлю просто второй подзаголовок, чтобы проверить как работает GitHub</h2> -->
