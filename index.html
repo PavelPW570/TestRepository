@@ -38,6 +38,11 @@
         .anchor {
             anchor-name: --my-anchor;
         }
+        
+        p {
+            margin: 10px;
+            padding: 0px;
+        }
     </style>
 
 </head>
@@ -51,82 +56,86 @@
             <a href="">Управление услугами</a>
             <a href="">Настройки</a>
         </nav>
+        <nav id="second panel"><a href="" id="second link">Вторая ссылка отдельным Навом</a></nav>
+
     </div>
     <div class="order" id="ordering sevices">
         <div>
-            <h2>Панель заказа услуг</h2>
+            <p>
+                <h2>Панель заказа услуг</h2>
+            </p>
             <form>
-                <label for="city">Город</label>
-                <input type="text" placeholder="Укажите ваш город" id="city">
+                <p><label for="city">Город</label>
+                    <input type="text" placeholder="Укажите ваш город" id="city"></p>
 
-                <label for="number">Номер телефона</label>
-                <input placeholder="Ваш номер телефона" type="text" id="number">
+                <p><label for="number">Номер телефона</label>
+                    <input placeholder="Ваш номер телефона" type="text" id="number"></p>
 
-                <label for="term">Сроки тестирования</label>
-                <input type="date" id="term"><br>
+                <p><label for="term">Сроки тестирования</label>
+                    <input type="date" id="term"><br></p>
 
-                <label for='file'>Выбор файла</label>
-                <input id="file" type="file" name="Просто кнопка"><br>
+                <p><label for='file'>Выбор файла</label>
+                    <input id="file" type="file" name="Просто кнопка"><br></p>
 
-                <label for="button">Обычная, но почему-то невидимая кнопка</label>
-                <input id="button" type="button"><br>
+                <p><label for="button" name="Йа кнопко!">Обычная, но почему-то невидимая кнопка</label>
+                    <input id="button" type="button"><br></p>
 
-                <label for="checkbox">Обычный чекбокс</label>
-                <input id="checkbox" type="checkbox"><br>
+                <p><label for="checkbox">Обычный чекбокс</label>
+                    <input id="checkbox" type="checkbox"><br></p>
 
-                <label for="color">Новый элемент - "Выбор цвета"</label>
-                <input id="color" type="color"><br>
+                <p><label for="color">Новый элемент - "Выбор цвета"</label>
+                    <input id="color" type="color"><br></p>
 
-                <label for="date">Тоже новый элемент - "Дата"</label>
-                <input id="date" type="date"><br>
+                <p><label for="date">Тоже новый элемент - "Дата"</label>
+                    <input id="date" type="date"><br></p>
 
-                <label for="datatime">Тоже новый непонятный элемент @datatime"</label>
-                <input id="datatime" placeholder="Новый элемент datatime" type="datetime"><br>
+                <p><label for="datatime">Тоже новый непонятный элемент @datatime"</label>
+                    <input id="datatime" placeholder="Новый элемент datatime" type="datetime"><br></p>
 
-                <label for="datatime-local">Новый элемент "datatime-local" </label>
-                <input id="datatime-local" type="datetime-local"><br>
+                <p><label for="datatime-local">Новый элемент "datatime-local" </label>
+                    <input id="datatime-local" type="datetime-local"><br></p>
 
-                <label for="email">Новый элемент E-mail. Нуждается в проверке корректности</label>
-                <input id="email" type="email" placeholder="Введите ваш email"><br>
+                <p><label for="email">Новый элемент E-mail. Нуждается в проверке корректности</label>
+                    <input id="email" type="email" placeholder="Введите ваш email"><br></p>
 
-                <input id="hidden" type="hidden">
-                <label for="hidden">Новый скрытый элемент "hidden"</label> <br>
+                <p><input id="hidden" type="hidden">
+                    <label for="hidden">Новый скрытый элемент "hidden"</label> <br></p>
 
-                <input id="image" type="image">
-                <label for="image">Новый элемент "image"</label> <br>
+                <p><input id="image" type="image">
+                    <label for="image">Новый элемент "image"</label> <br></p>
 
-                <input id="month" type="month">
-                <label for="month">Новый элемент Месяц "Month"</label><br>
+                <p><input id="month" type="month">
+                    <label for="month">Новый элемент Месяц "Month"</label><br></p>
 
-                <input id="number" placeholder="Выберете, пожалуйста нужное количество" aria-placeholder="red" type="number">
-                <label for="number">Элемент "number". Представляет из себя просто цифровой счетчик</label> <br>
+                <p><input id="number" placeholder="Выберете, пожалуйста нужное количество" aria-placeholder="red" type="number">
+                    <label for="number">Элемент "number". Представляет из себя просто цифровой счетчик</label> <br></p>
 
-                <input id="password" type="password" placeholder="Введите, пожалуйста пароль">
-                <label for="password">Это поле для ввода паролей</label> <br>
+                <p><input id="password" type="password" placeholder="Введите, пожалуйста пароль">
+                    <label for="password">Это поле для ввода паролей</label> <br></p>
 
-                <input id="radio" type="radio">
-                <label for="radio">Обычная radio button</label> <br>
+                <p><input id="radio" type="radio">
+                    <label for="radio">Обычная radio button</label> <br></p>
 
-                <input id="range" type="range">
-                <label for="range">Новый элемент "range". Представляет из себя ползунок. Скорее всего дожны задаваться граничные значения, для передачи их на сервер по положению бегунка</label> <br>
+                <p><input id="range" type="range">
+                    <label for="range">Новый элемент "range". Представляет из себя ползунок. Скорее всего дожны задаваться граничные значения, для передачи их на сервер по положению бегунка</label> <br></p>
 
-                <input type="reset">
-                <label for="reset">Обычная кнопка Reset, или "Сбросить"</label> <br>
+                <p><input type="reset">
+                    <label for="reset">Обычная кнопка Reset, или "Сбросить"</label> <br></p>
 
-                <input id="search" placeholder="Поисковая строка" type="search">
-                <label for="search">Поисковое поле которое называется "search"</label> <br>
+                <p><input id="search" placeholder="Поисковая строка" type="search">
+                    <label for="search">Поисковое поле которое называется "search"</label> <br></p>
 
-                <input id="tel" placeholder="Введите номер вашего телефона" type="tel">
-                <label for="tel">Похоже на поле для ввода номера телефона</label> <br>
+                <p><input id="tel" placeholder="Введите номер вашего телефона" type="tel">
+                    <label for="tel">Похоже на поле для ввода номера телефона</label> <br></p>
 
-                <input type="time">
-                <label for="time">Поле time. Похоже предназначено для ввода времени</label> <br>
+                <p><input type="time">
+                    <label for="time">Поле time. Похоже предназначено для ввода времени</label> <br></p>
 
-                <input id="url" placeholder="URL - поле для ввода адреса" type="url">
-                <label for="url">Очень похоже на специальное поле для ввода URL-адресов</label> <br>
+                <p><input id="url" placeholder="URL - поле для ввода адреса" type="url">
+                    <label for="url">Очень похоже на специальное поле для ввода URL-адресов</label> <br></p>
 
-                <input id="week" type="week">
-                <label for="week">Какое-то новое странное поле week. Похоже на специальное поле для введеине именно недели и года.</label> <br>
+                <p>input id="week" type="week">
+                    <label for="week">Какое-то новое странное поле week. Похоже на специальное поле для введеине именно недели и года.</label> <br></p>
 
                 <div id="my-popover" popover=manual>
                     <button class="close-btn" popovertarget="my-popover" popovertargetaction="hide">
@@ -167,11 +176,30 @@
                     <p>Обед\перерыв</p>
                 </option>
             </select>
-        </div>
+        </div><br>
         <!--<script src="script.js"></script> -->
 
         <!--<h2>Тут я добавлю просто второй подзаголовок, чтобы проверить как работает GitHub</h2> -->
+        <h3>Тут будет последний список где я попытаюсь склепать боковую панель методом списка</h3>
+        <aside style="margin-left: 10px;">
+            <p>
+                <ul>
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                </ul>
+            </p>
+        </aside> <br>
+        <footer style="font-size: large; font-style: italic; color: blueviolet;">
+            <p></p>Последняя строка в этом документе</p><br>
+            <ul>
+                <li><img src="red_cross.png"><a href="#">О компании</a></li>
+                <li><img src="46027.png"><a href="#">Регистрационные данные</a></li>
+                <li><a href="#">Номера телефонов</a></li>
+                <li><a href="#">Электронная почта</a></li>
+            </ul>
 
+        </footer>
 </body>
 
 </html>
